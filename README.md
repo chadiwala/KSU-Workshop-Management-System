@@ -1,3 +1,4 @@
+![KSU Workshop Management System](assets/48C10E27-636B-4A5D-85C3-2AC3042EB705.png)
 <div align="center">
 
 # 🎓 KSU Workshop Management System
