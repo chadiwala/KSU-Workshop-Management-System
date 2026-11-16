@@ -1,44 +1,83 @@
 
 
 
+
 <p align="center">
-  <img src="./,/assets/F0DBD5A3-DBD0-4F3A-8BCD-4A413A83088C.gif" alt="Workshop Management System" width="100%">
+  <img src="./,/assets/F0DBD5A3-DBD0-4F3A-8BCD-4A413A83088C.gif" alt="Workshop Management System Animated Banner" width="100%">
 </p>
 
+<h1 align="center">Workshop Management System</h1>
 
+<p align="center">
+  A desktop application for university workshop management, scheduling, and student bookings.
+</p>
 
-
-### A Python desktop application for university workshop scheduling and student bookings
-
-**Python** · **Tkinter** · **SQLite** · **CSV Export**
-
-</div>
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.x-3776AB?style=flat-square&logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/GUI-Tkinter-5B8DEF?style=flat-square">
+  <img src="https://img.shields.io/badge/Database-SQLite-07405E?style=flat-square&logo=sqlite&logoColor=white">
+  <img src="https://img.shields.io/badge/Project-University_Team-9B8DE5?style=flat-square">
+</p>
 
 ---
 
 ## Overview
 
-KSU Workshop Management System is a university team project that brings workshop administration and student registration into a single desktop application. It provides separate student and administrator interfaces backed by a local SQLite database.
+**Workshop Management System** is a collaborative university project developed in Python.
 
-## Features
+The application simplifies workshop administration and student registration through a desktop interface, with separate experiences for students and administrators.
 
-| Student experience | Administrator experience |
-| --- | --- |
-| Register and sign in | Sign in to the admin portal |
-| Browse upcoming workshops | Create and manage workshop listings |
-| Book available seats | View workshop information |
-| Review upcoming bookings | Export database tables to CSV |
+It uses SQLite for local data storage and supports workshop bookings and CSV data exports.
 
-The booking service checks seat availability inside a SQLite transaction to reduce conflicting reservations.
+## Key Features
+
+| Student Portal | Administrator Portal |
+|---|---|
+| Account registration and login | Administrator login |
+| Browse available workshops | Create and manage workshops |
+| Book workshop seats | View workshop information |
+| View upcoming bookings | Export database tables to CSV |
+
+The booking service checks seat availability within a SQLite transaction to reduce conflicting reservations.
 
 ## Technology
 
-- **Python 3** — application logic
-- **Tkinter / ttk** — desktop user interface (included with many Python distributions)
-- **SQLite** — local relational database
-- **CSV** — data export and backups
+| Technology | Purpose |
+|---|---|
+| Python 3 | Application logic |
+| Tkinter / ttk | Desktop user interface |
+| SQLite | Local relational database |
+| CSV | Data export and backups |
 
-## Getting started
+## Application in Action
+
+A visual walkthrough of the application, from database initialization to workshop management.
+
+### 01 — Database Initialization
+
+Initialize the local SQLite database:
+
+```bash
+python setup_database.py
+```
+
+### 02 — Launch the Application
+
+Start the desktop interface:
+
+```bash
+python login.py
+```
+
+### 03 — Student Experience
+
+Students can register, browse workshops, reserve available seats, and review their bookings.
+
+### 04 — Administrator Experience
+
+Administrators can manage workshop listings, view workshop information, and export database records.
+
+> Actual execution screenshots will be added after capturing the running application.
 
 ## Getting Started
 
@@ -48,7 +87,7 @@ The booking service checks seat availability inside a SQLite transaction to redu
 git clone https://github.com/chadiwala/KSU-Workshop-Management-System.git
 ```
 
-### 2. Open the project
+### 2. Navigate to the project
 
 ```bash
 cd KSU-Workshop-Management-System
@@ -60,76 +99,66 @@ cd KSU-Workshop-Management-System
 python setup_database.py
 ```
 
-### 4. Launch the application
+### 4. Run the application
 
 ```bash
 python login.py
 ```
 
-## Tech Stack
+**Requirements:** Python 3 with Tkinter support. No additional third-party Python packages are required by the current source files.
 
-| Technology | Purpose |
-|---|---|
-| Python | Application logic |
-| Tkinter | Desktop GUI |
-| SQLite | Local database |
-| CSV | Data export |
-
-1. Install Python 3 with Tkinter support.
-2. Clone or download this repository.
-3. Open a terminal in the project directory.
-4. Initialize the database:
-
-   ```bash
-   python setup_database.py
-   ```
-
-5. Launch the desktop application:
-
-   ```bash
-   python login.py
-   ```
-
-> The app uses a local `ksu_workshop.db` file, which is deliberately excluded from version control. The database is created using the supplied setup script. No external Python packages are required by the current source files.
-
-## Project structure
+## Project Structure
 
 ```text
 KSU-Workshop-Management-System/
-├── login.py                 # Entry point and authentication flow
-├── signup.py                # Student registration
-├── student_window.py        # Student dashboard
-├── admin_window.py          # Administrator dashboard
-├── booking_service.py       # Seat reservation logic
-├── my_workshops_service.py  # Student booking queries
-├── workshop_db.py           # Workshop database operations
-├── setup_database.py        # Database schema initialization
-├── backup_service.py        # CSV data export
-├── docs/
-│   └── screenshots/         # Add actual UI captures here
-├── .gitignore
-└── README.md
+│
+├── login.py
+├── signup.py
+├── student_window.py
+├── admin_window.py
+│
+├── booking_service.py
+├── my_workshops_service.py
+├── workshop_db.py
+│
+├── setup_database.py
+├── backup_service.py
+│
+├── README.md
+└── assets/
 ```
 
-## Database design
+## Database Architecture
 
-The SQLite schema includes four tables:
+The application uses four SQLite tables:
 
-- `students` — student accounts
-- `admins` — administrator accounts
-- `workshops` — scheduled workshops and capacities
-- `bookings` — student-to-workshop reservations
+| Table | Description |
+|---|---|
+| `students` | Student accounts |
+| `admins` | Administrator accounts |
+| `workshops` | Workshop information and capacities |
+| `bookings` | Student workshop reservations |
 
-## Screenshots
+The database file is excluded from the public repository to protect account and booking data.
 
-Screenshots of the real application can be added to `docs/screenshots/` and linked here. No mock screenshots are presented as real captures.
+## Team & Contributions
 
-## Project context and credits
+This application was developed as a collaborative university Python project.
 
-Developed as a **collaborative university Python project**. Contributions belong to the respective team members. Add the team's agreed names, roles, and attribution before publishing a final contributor list.
+Each team member contributed to the development and integration of different application components.
 
-## Notes
+Individual contributions and credits can be documented here with the team's agreement.
 
-- Designed as a local desktop application, not a hosted website.
-- The provided database is not included because it contains account and booking records.
-- This repository is a learning project; review security and data handling before production use.
+## Project Notes
+
+- Developed as a local desktop application.
+- Uses SQLite instead of an external database server.
+- Supports CSV data exports.
+- Intended as an academic software development project.
+- Security and data handling should be reviewed before production deployment.
+
+---
+
+<p align="center">
+  <b>Built with Python, teamwork, and a passion for software development.</b>
+</p>
