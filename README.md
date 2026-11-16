@@ -1,5 +1,6 @@
-![KSU Workshop Management System](assets/48C10E27-636B-4A5D-85C3-2AC3042EB705.png)
 <div align="center">
+  <img src="assets/E2356DBC-76B8-42AF-BBD4-47229FFCB186.gif" width="100%" alt="KSU Workshop Management System Animated Banner">
+</div>
 
 # 🎓 KSU Workshop Management System
 
