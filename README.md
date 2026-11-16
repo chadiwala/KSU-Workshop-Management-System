@@ -40,6 +40,41 @@ The booking service checks seat availability inside a SQLite transaction to redu
 
 ## Getting started
 
+## Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/chadiwala/KSU-Workshop-Management-System.git
+```
+
+### 2. Open the project
+
+```bash
+cd KSU-Workshop-Management-System
+```
+
+### 3. Initialize the database
+
+```bash
+python setup_database.py
+```
+
+### 4. Launch the application
+
+```bash
+python login.py
+```
+
+## Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| Python | Application logic |
+| Tkinter | Desktop GUI |
+| SQLite | Local database |
+| CSV | Data export |
+
 1. Install Python 3 with Tkinter support.
 2. Clone or download this repository.
 3. Open a terminal in the project directory.
