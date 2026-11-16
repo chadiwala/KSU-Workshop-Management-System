@@ -1,11 +1,9 @@
 
-<div align="center">
-  <img
-    src="./%2C/assets/E2356DBC-76B8-42AF-BBD4-47229FFCB186.gif"
-    alt="KSU Workshop Management System"
-    width="100%"
-  />
-</div>
+
+<p align="center">
+  <img src="assets/F0DBD5A3-DBD0-4F3A-8BCD-4A413A83088C.gif" alt="Workshop Management System Animated Banner" width="100%">
+</p>
+
 
 
 ### A Python desktop application for university workshop scheduling and student bookings
