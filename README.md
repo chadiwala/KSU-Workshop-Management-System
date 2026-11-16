@@ -1,8 +1,10 @@
 
 
+
 <p align="center">
-  <img src="assets/F0DBD5A3-DBD0-4F3A-8BCD-4A413A83088C.gif" alt="Workshop Management System Animated Banner" width="100%">
+  <img src="./,/assets/F0DBD5A3-DBD0-4F3A-8BCD-4A413A83088C.gif" alt="Workshop Management System" width="100%">
 </p>
+
 
 
 
